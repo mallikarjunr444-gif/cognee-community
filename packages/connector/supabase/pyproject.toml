@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "cognee-community-connector-supabase"
+version = "0.1.0"
+description = "Supabase database data source connector for cognee"
+authors = ["Cognee Community"]
+readme = "README.md"
+packages = [{ include = "cognee_community_connector_supabase" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+requests = ">=2.28.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0.0"
+pytest-asyncio = ">=0.23.0"
